@@ -14,6 +14,7 @@ function TrackList({tracks, variant, theme}: TrackListProps){ //se crea el compo
     //entonces se guarda true si es exactamente "wide"
 
     return(
+
         <ul className={isWide ? "track-list-wide" : "track-list-compact"}>
 
             /*
