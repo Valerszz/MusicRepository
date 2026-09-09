@@ -1,6 +1,7 @@
 import './App.css'
 import samSmithImg from './assets/professional_cinematic_concert_photo_of_sam_smith_performing_on_stage_with.png'
 import duaLipaImg from './assets/professional_cinematic_concert_photo_of_a_pop_star_like_dua_lipa_performing_on.png'
+import TrendingNow from "./components/TrendingNow/TrendingNow.tsx";
 
 export default function App() {
   return (
@@ -37,67 +38,7 @@ export default function App() {
         </header>
 
         {/* Trending Now Horizontal Scroll */}
-        <section className="trending-section">
-          <div className="section-header">
-            <h2 className="section-title">Trending Now</h2>
-            <button className="view-all-btn">
-              View All <span className="material-symbols-outlined">arrow_forward</span>
-            </button>
-          </div>
-          <div className="trending-scroll hide-scrollbar">
-            {/* Trending Item 1 */}
-            <div className="trending-card">
-              <div className="trending-thumb-wrap">
-                <img alt="Artist Thumbnail" className="trending-img" data-alt="A moody, high-contrast promotional photo of an electronic music producer in a dark studio illuminated by neon cyan and magenta lights. The artist is silhouetted against complex modular synthesizers. The visual style is cyberpunk and nocturnal, fitting a premium dark mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQZpQk6bTavW9fI8sNYyKhF1hbEpex5OfVO-ltCKjMLkdSfkanmNTgbcL-LflxQvS6VC9b9bSEaOASd-tdBN_v5hkw3J3MulZVbu42h-fHMLPgzM6Hj-qHH0RySbsIK3PdgCQJHiisZ5HVdIWesyi0l1O-PQde9luPBOUZbYCD2l01K1q5Yl25zcZFaoxw4JiNZG1yQOHqen9wFIAAOrcJp0hn3AR4U1auiIuqBtTDL1u61poHE5kF" />
-                <div className="trending-thumb-overlay"></div>
-                <div className="trending-play-btn">
-                  <span className="material-symbols-outlined icon-fill" data-weight="fill">play_arrow</span>
-                </div>
-              </div>
-              <h3 className="trending-title">Aetherial Synthesis</h3>
-              <p className="trending-genre">Ambient Techno</p>
-            </div>
-
-            {/* Trending Item 2 */}
-            <div className="trending-card">
-              <div className="trending-thumb-wrap">
-                <img alt="Artist Thumbnail" className="trending-img" data-alt="A vibrant, dynamic live performance shot of an indie pop artist on stage. Bathed in deep purple and soft pink spotlighting against a pitch-black background. The artist is mid-performance, exuding energy. The image feels raw, high-fidelity, and perfectly suited for a premium music discovery platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSoFB-LtXZlJYa6WE56n5BEFkTyZ9yp4jHvPLTFnFzB294a0TbwdWhDAPAskhzYFmYQHSWbn4lCF7EfGDV-_PLiOuY68Tjct5GnDaNpHEXPI9uG28fAfiSjZchaOT4z2JIqVxasffL-DkZmV7UVVxzLtxk5IMmc24lNYJWNBpV5dz_B6f52BBZQN1nqByg6zsjTOUSN8I7Wk6fTTllfZwnX5HIEjrWqdgCYfG8e6JrldHI5jYws13d" />
-                <div className="trending-thumb-overlay"></div>
-                <div className="trending-play-btn">
-                  <span className="material-symbols-outlined icon-fill" data-weight="fill">play_arrow</span>
-                </div>
-              </div>
-              <h3 className="trending-title">Neon Reverie</h3>
-              <p className="trending-genre">Dream Pop</p>
-            </div>
-
-            {/* Trending Item 3 */}
-            <div className="trending-card">
-              <div className="trending-thumb-wrap">
-                <img alt="Artist Thumbnail" className="trending-img" data-alt="A sophisticated, black-and-white portrait of a modern jazz saxophonist. The lighting is cinematic, with strong chiaroscuro highlighting the contours of the artist's face and the metallic gleam of the instrument. The mood is elegant, introspective, and highly refined, aligning with a luxury dark theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbC8fJSGqbbu7U9cVzkIoXOX6peUkUG0q6sMdHEN2KG5bT6I8__TuywskMpyZStLHMMjbAgJWR6Hs_unDLOD-yGdyrob0wKQ3ZFNTRBX-_e8IKZ03dmh-0rEYZKjZZvWHhMf7VcPLyLzJJYZOs76WiF2WSfOHE8ZXfd-PBnb5uextoDazA0VKZfySlGFtLKiPdoWiBVymDyIwdKLjBxEafLdd1NY_0nyrm2ZO6Jbh8-gWPchuak8fK" />
-                <div className="trending-thumb-overlay"></div>
-                <div className="trending-play-btn">
-                  <span className="material-symbols-outlined icon-fill" data-weight="fill">play_arrow</span>
-                </div>
-              </div>
-              <h3 className="trending-title">Miles Vanguard</h3>
-              <p className="trending-genre">Nu-Jazz</p>
-            </div>
-
-            {/* Trending Item 4 */}
-            <div className="trending-card">
-              <div className="trending-thumb-wrap">
-                <img alt="Artist Thumbnail" className="trending-img" data-alt="An edgy, low-angle shot of a post-punk rock band in an abandoned warehouse. The lighting is harsh and industrial, with cool blue undertones and stark shadows. The aesthetic is gritty yet polished, capturing raw energy within a premium digital gallery context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkzhj-FXGZhLbmhZPh-XV6fwrs1tCOfJJdLchDbC5dpV09-D_Ub3SwmMe8v0wMQwIOTPD03dVyrk7devg_MgemImsa6eS4WJSilYMB6GzHQt9hmk5LRfm4FxIZ1UOYiAiU3UlYrE96-m88FojROwS8eAV_sZDUbvkP21UoAGKmqrpLKHNmvKSLp8zRsumIxpjbZLflkl_JUi4gJJnWGILoQx9xPcIFD2Xg51cDJ3OgJ2edGTjT5E3r" />
-                <div className="trending-thumb-overlay"></div>
-                <div className="trending-play-btn">
-                  <span className="material-symbols-outlined icon-fill" data-weight="fill">play_arrow</span>
-                </div>
-              </div>
-              <h3 className="trending-title">The Brutalists</h3>
-              <p className="trending-genre">Post-Punk</p>
-            </div>
-          </div>
-        </section>
+        <TrendingNow />
 
         {/* Featured Artists Bento Grid */}
         <section className="featured-section">
