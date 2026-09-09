@@ -1,6 +1,9 @@
 import './App.css'
 import samSmithImg from './assets/professional_cinematic_concert_photo_of_sam_smith_performing_on_stage_with.png'
 import duaLipaImg from './assets/professional_cinematic_concert_photo_of_a_pop_star_like_dua_lipa_performing_on.png'
+import Footer from "./components/Footer/Footer.tsx";
+import Header from "./components/Header/Header.tsx";
+
 
 export default function App() {
   return (
@@ -31,10 +34,8 @@ export default function App() {
       {/* Main Content Canvas */}
       <main className="main-content">
         {/* Header */}
-        <header className="header-section">
-          <h1 className="header-title">Discover the Vanguard</h1>
-          <p className="header-desc">Immerse yourself in the sonic landscapes of tomorrow. Explore our curated selection of visionary artists defining the current musical epoch.</p>
-        </header>
+        <Header />
+
 
         {/* Trending Now Horizontal Scroll */}
         <section className="trending-section">
@@ -291,20 +292,9 @@ export default function App() {
           </div>
         </section>
       </main>
+      // Footer
+      <Footer />
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-inner">
-          <div className="footer-logo">SONIC IMMERSION</div>
-          <div className="footer-links">
-            <a className="footer-link" href="#">Privacy Policy</a>
-            <a className="footer-link" href="#">Terms of Service</a>
-            <a className="footer-link" href="#">Support</a>
-            <a className="footer-link" href="#">Contact</a>
-          </div>
-          <div className="footer-copy">© 2024 SONIC IMMERSION. ALL RIGHTS RESERVED.</div>
-        </div>
-      </footer>
     </div>
   )
 }
