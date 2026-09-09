@@ -1,0 +1,26 @@
+/* Trending Now Section */
+.trending-section {
+    margin-bottom: 64px;
+}
+
+.trending-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-gutter);
+    padding-bottom: 16px;
+    margin-left: calc(-1 * var(--spacing-margin-mobile));
+    margin-right: calc(-1 * var(--spacing-margin-mobile));
+    padding-left: var(--spacing-margin-mobile);
+    padding-right: var(--spacing-margin-mobile);
+    scroll-snap-type: x mandatory;
+}
+
+@media (min-width: 768px) {
+    .trending-scroll {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
