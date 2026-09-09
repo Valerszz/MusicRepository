@@ -1,0 +1,130 @@
+.artist-card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--color-surface-container);
+}
+
+@media (min-width: 768px) {
+    .artist-card-wide {
+        grid-column: span 2;
+    }
+}
+
+.artist-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.artist-card:hover .artist-img {
+    transform: scale(1.05);
+}
+
+.artist-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(18, 11, 30, 0.95) 0%, rgba(18, 11, 30, 0.7) 40%, transparent 100%);
+}
+
+.artist-card-content-wide {
+    position: relative;
+    z-index: 10;
+    padding: 24px;
+    width: 100%;
+    background-color: rgba(22, 16, 33, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .artist-card-content-wide {
+        padding: 32px;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.artist-info {
+    flex: 1;
+}
+
+.artist-badges {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-primary-container);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.badge-secondary {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.badge-error {
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
+}
+
+.artist-name-lg {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+    .artist-name-lg {
+        font-size: 40px;
+    }
+}
+
+.artist-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-on-surface-variant);
+}
+
+.tracklist-box-wide {
+    width: 100%;
+    background-color: rgba(31, 25, 42, 0.8);
+    border-radius: var(--radius-xl);
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (min-width: 768px) {
+    .tracklist-box-wide {
+        width: 256px;
+        flex-shrink: 0;
+    }
+}
+
